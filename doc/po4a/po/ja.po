@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: aptitude 0.4.4\n"
 "Report-Msgid-Bugs-To: aptitude@packages.debian.org\n"
 "POT-Creation-Date: 2012-05-23 10:27+0900\n"
-"PO-Revision-Date: 2012-05-24 14:09+0900\n"
+"PO-Revision-Date: 2012-05-25 17:52+0900\n"
 "Last-Translator: KURASAWA Nozomu <nabetaro@debian.or.jp>\n"
 "Language-Team: Japanese\n"
 "Language: \n"
@@ -237,13 +237,12 @@ msgstr ""
 
 #. type: Content of the package-cycle-information entity
 #: en/aptitude.xml:36
-#, fuzzy
 msgid ""
 "<menuchoice><shortcut><keycap>i</keycap></shortcut><guimenu>Package</"
 "guimenu><guimenuitem>Cycle Information</guimenuitem></menuchoice>"
 msgstr ""
-"<menuchoice><shortcut><keycap>enter</keycap></shortcut><guimenu>パッケージ</"
-"guimenu><guimenuitem>情報</guimenuitem></menuchoice>"
+"<menuchoice><shortcut><keycap>i</keycap></shortcut><guimenu>パッケージ</"
+"guimenu><guimenuitem>パッケージ情報の切り替え</guimenuitem></menuchoice>"
 
 #. type: Content of the package-changelog entity
 #: en/aptitude.xml:37
@@ -337,13 +336,12 @@ msgstr ""
 
 #. type: Content of the resolver-reject-break-holds entity
 #: en/aptitude.xml:48
-#, fuzzy
 msgid ""
 "<menuchoice><guimenu>Resolver</guimenu><guimenuitem>Reject Breaking Holds</"
 "guimenuitem></menuchoice>"
 msgstr ""
-"<menuchoice><guimenu>ヘルプ</guimenu><guimenuitem>ライセンス</guimenuitem></"
-"menuchoice>"
+"<menuchoice><guimenu>問題解決</guimenu><guimenuitem>破損につながる固定を拒否"
+"</guimenuitem></menuchoice>"
 
 #. type: Content of the search-find entity
 #: en/aptitude.xml:50
@@ -374,13 +372,12 @@ msgstr ""
 
 #. type: Content of the search-repeat-find-back entity
 #: en/aptitude.xml:53
-#, fuzzy
 msgid ""
 "<menuchoice><shortcut><keycap>N</keycap></shortcut><guimenu>Search</"
 "guimenu><guimenuitem>Find Again Backwards</guimenuitem></menuchoice>"
 msgstr ""
-"<menuchoice><shortcut><keycap>\\</keycap></shortcut><guimenu>検索</"
-"guimenu><guimenuitem>上を検索</guimenuitem></menuchoice>"
+"<menuchoice><shortcut><keycap>N</keycap></shortcut><guimenu>検索</"
+"guimenu><guimenuitem>前の検索を逆方向に繰り返す</guimenuitem></menuchoice>"
 
 #. type: Content of the search-limit entity
 #: en/aptitude.xml:54
@@ -624,7 +621,7 @@ msgid ""
 "<literal><link linkend='searchBrokenType'>?broken-<replaceable>depType</"
 "replaceable></link></literal>"
 msgstr ""
-"<literal><link linkend='searchBrokenType'>?broken-<replaceable>depType</"
+"<literal><link linkend='searchBrokenType'>?broken-<replaceable>依存種別</"
 "replaceable></link></literal>"
 
 #. type: Content of the Sbroken-type-term entity
@@ -633,7 +630,7 @@ msgid ""
 "<literal><link linkend='searchBrokenTypeTerm'>?broken-<replaceable>depType</"
 "replaceable></link></literal>"
 msgstr ""
-"<literal><link linkend='searchBrokenTypeTerm'>?broken-<replaceable>depType</"
+"<literal><link linkend='searchBrokenTypeTerm'>?broken-<replaceable>依存種別</"
 "replaceable></link></literal>"
 
 #. type: Content of the Sbroken-reverse-dep entity
@@ -642,8 +639,8 @@ msgid ""
 "<literal><link linkend='searchReverseBrokenDep'>?broken-reverse-"
 "<replaceable>depType</replaceable></link></literal>"
 msgstr ""
-"<literal><link linkend='searchReverseBrokenDep'>?broken-reverse-"
-"<replaceable>depType</replaceable></link></literal>"
+"<literal><link linkend='searchReverseBrokenDep'>?broken-reverse-<replaceable>"
+"依存種別</replaceable></link></literal>"
 
 #. type: Content of the Sconflicts entity
 #: en/aptitude.xml:96
@@ -663,7 +660,7 @@ msgid ""
 "<literal><link linkend='searchDep'>?<replaceable>depType</replaceable></"
 "link></literal>"
 msgstr ""
-"<literal><link linkend='searchDep'>?<replaceable>depType</replaceable></"
+"<literal><link linkend='searchDep'>?<replaceable>依存種別</replaceable></"
 "link></literal>"
 
 #. type: Content of the Sdepends entity
@@ -769,7 +766,7 @@ msgid ""
 "<literal><link linkend='searchReverseDep'>?reverse-<replaceable>depType</"
 "replaceable></link></literal>"
 msgstr ""
-"<literal><link linkend='searchReverseDep'>?reverse-<replaceable>depType</"
+"<literal><link linkend='searchReverseDep'>?reverse-<replaceable>依存種別</"
 "replaceable></link></literal>"
 
 #. type: Content of the Sreverse-depends entity
@@ -801,8 +798,8 @@ msgid ""
 "<literal><link linkend='searchReverseBrokenDep'>?reverse-broken-"
 "<replaceable>depType</replaceable></link></literal>"
 msgstr ""
-"<literal><link linkend='searchReverseBrokenDep'>?reverse-broken-"
-"<replaceable>depType</replaceable></link></literal>"
+"<literal><link linkend='searchReverseBrokenDep'>?reverse-broken-<replaceable>"
+"依存種別</replaceable></link></literal>"
 
 #. type: Content of the Ssection entity
 #: en/aptitude.xml:127
@@ -1058,7 +1055,6 @@ msgstr ""
 
 #. type: Content of: <book><preface><section><para>
 #: en/aptitude.xml:260
-#, fuzzy
 msgid ""
 "Some packages require other packages in order to function.  In Debian, "
 "packages can <firstterm>depend</firstterm> upon, <firstterm>recommend</"
@@ -1067,8 +1063,8 @@ msgid ""
 msgstr ""
 "パッケージによっては、機能するために他のパッケージを必要とします。Debian で"
 "は、パッケージは他のパッケージとの間に<firstterm>依存</firstterm>・"
-"<firstterm>推奨</firstterm>・<firstterm>提案</firstterm>・<firstterm>衝突</"
-"firstterm>といった関係をもつ可能性があります。"
+"<firstterm>推奨</firstterm>・<firstterm>提案</firstterm>・<firstterm>破損</"
+"firstterm>・<firstterm>競合</firstterm>といった関係をもつ可能性があります。"
 
 #. type: Content of: <book><preface><section><itemizedlist><listitem><para>
 #: en/aptitude.xml:272
@@ -1364,6 +1360,8 @@ msgid ""
 "The <systemitem>gettext</systemitem> program, which should be included with "
 "your Linux distribution."
 msgstr ""
+"あなたの Linux ディストリビューションに、入っているであろう "
+"<systemitem>gettext</systemitem> プログラム。"
 
 #. type: Content of: <book><preface><section><section><orderedlist><listitem><itemizedlist><listitem><para>
 #: en/aptitude.xml:484
@@ -1422,7 +1420,6 @@ msgstr "&aptitude; の開発ソースツリーの入手"
 
 #. type: Content of: <book><preface><section><section><section><para>
 #: en/aptitude.xml:525
-#, fuzzy
 msgid ""
 "If you want to test the latest bleeding-edge source code for &aptitude;, you "
 "can download unreleased &aptitude; source code using Git.  Install Git "
@@ -1430,14 +1427,11 @@ msgid ""
 "<command>git clone git://git.debian.org/git/aptitude/aptitude.git</command> "
 "to retrieve the most recent source code."
 msgstr ""
-"最新かつ最前線のソースコードをテストしたいか、さもなければ &aptitude; の開発"
-"を手伝いたい場合、リリースされていない &aptitude; のソースコードを darcs を用"
-"いてダウンロードできます。darcs (<ulink url='http://www.darcs.net'></ulink> "
-"から入手できます。) をインストールし、コマンド <command>darcs get http://"
-"people.debian.org/~dburrows/darcs/aptitude</command> を実行して最新のソース"
-"コードを取得してください。コンピュータ上でソースコードが利用可能になったら、"
-"<command>cd</command> でそこに入って <command>darcs pull</command> と入力する"
-"と、メインリポジトリに加えられた変更でソースコードを更新できます。"
+"&aptitude; の最前線のソースコードをテストしたい場合、リリースされていない "
+"&aptitude; のソースコードを Git を用いてダウンロードできます。Git をインス"
+"トールし (<ulink url='http://git-scm.com/'/> にあります)、コマンド "
+"<command>git clone git://git.debian.org/git/aptitude/aptitude.git</command> "
+"を実行して最新のソースコードを取得してください。"
 
 #. type: Content of: <book><preface><section><section><section><warning><para><footnote><para>
 #: en/aptitude.xml:543
@@ -1450,7 +1444,6 @@ msgstr ""
 
 #. type: Content of: <book><preface><section><section><section><warning><para>
 #: en/aptitude.xml:537
-#, fuzzy
 msgid ""
 "The &aptitude; Git repository is an active development tree; it will change "
 "as bugs are fixed and features are added, and there is absolutely no "
@@ -1458,11 +1451,11 @@ msgid ""
 "welcome, but be aware that you use development code entirely at your own "
 "risk!<placeholder type=\"footnote\" id=\"0\"/>"
 msgstr ""
-"&aptitude; の darcs リポジトリは活発な開発ツリーです。つまり、このリポジトリ"
-"はバグ修正や機能追加のたびに変更されます。そして、それがコンパイルできるとい"
-"う保証さえ全くなく、適切に動作するという保証については言うまでもありません! "
-"バグ報告は歓迎しますが、開発中のコードの利用は完全に自己責任となることを承知"
-"してください!<footnote>"
+"&aptitude; の Git リポジトリは活発な開発ツリーです。つまり、このリポジトリは"
+"バグ修正や機能追加のたびに変更されます。そして、それがコンパイルできるという"
+"保証さえ全くなく、適切に動作するという保証については言うまでもありません! バ"
+"グ報告は歓迎しますが、開発中のコードの利用は完全に自己責任となることを承知し"
+"てください!<placeholder type=\"footnote\" id=\"0\"/>"
 
 #. type: Content of: <book><preface><section><section><section><title>
 #: en/aptitude.xml:552
@@ -1522,13 +1515,11 @@ msgstr ""
 
 #. type: Content of: <book><preface><section><section><section><title>
 #: en/aptitude.xml:602
-#, fuzzy
 msgid "Building &aptitude; from the development tree"
-msgstr "ソースコードからの &aptitude; のビルド"
+msgstr "開発ツリーからの &aptitude; のビルド"
 
 #. type: Content of: <book><preface><section><section><section><para>
 #: en/aptitude.xml:605
-#, fuzzy
 msgid ""
 "To build &aptitude; from the Git repository, you must have the programs "
 "<systemitem>autoconf</systemitem> and <systemitem>automake</systemitem> "
@@ -1536,11 +1527,12 @@ msgid ""
 "to generate the files needed to compile &aptitude;, then execute "
 "<command>make</command> and <command>make install</command>."
 msgstr ""
-"darcs リポジトリから aptitude をビルドするには、<systemitem>autoconf</"
+"Git リポジトリから aptitude をビルドするには、<systemitem>autoconf</"
 "systemitem> や <systemitem>automake</systemitem> といったプログラムをインス"
-"トールしていなければなりません。<command>sh ./autogen.sh</command> と入力し"
-"て &aptitude; のコンパイルに必要なファイルを生成し、その後で <command>make</"
-"command> および <command>make install</command> を実行してください。"
+"トールしていなければなりません。<command>sh ./autogen.sh &amp;&amp; ./"
+"configure</command> と入力して &aptitude; のコンパイルに必要なファイルを生成"
+"し、その後で <command>make</command> および <command>make install</command> "
+"を実行してください。"
 
 #. type: Content of: <book><chapter><title>
 #: en/aptitude.xml:619
@@ -1613,7 +1605,6 @@ msgstr "<prompt>foobar$</prompt> <userinput>aptitude</userinput>"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:663
-#, fuzzy
 #| msgid ""
 #| "Once the cache is loaded (this may take some time on slower machines), "
 #| "the main aptitude screen should appear:"
@@ -1622,7 +1613,7 @@ msgid ""
 "main &aptitude; screen should appear:"
 msgstr ""
 "キャッシュが一度ロードされると (遅いマシンではこれにやや時間がかかります。)、"
-"aptitude のメイン画面が現れるでしょう。"
+"以下のような &aptitude; のメイン画面が現れます。"
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject>
 #: en/aptitude.xml:669
@@ -1636,7 +1627,7 @@ msgstr ""
 # <!-- TRANSLATION-FIXME: Translate a figure!! -->
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:674 en/aptitude.xml:791
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -1662,7 +1653,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--- Installed Packages\n"
@@ -1676,7 +1667,15 @@ msgstr ""
 "\n"
 "\n"
 "\n"
-"These packages are currently installed on your computer."
+"These packages are currently installed on your computer.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><screenshot>
 #: en/aptitude.xml:668 en/aptitude.xml:723 en/aptitude.xml:785
@@ -1746,7 +1745,7 @@ msgstr ""
 # <!-- TRANSLATION-FIXME: Translate a figure!! -->
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:729
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "+-------------------------+  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -1773,7 +1772,7 @@ msgid ""
 "\n"
 "Perform all pending installs and removals"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "+-------------------------+  u: Update  g: Download/Install/Remove Pkgs\n"
 "|Install/remove packages g|\n"
 "|Update package list     u|\n"
@@ -1890,7 +1889,7 @@ msgstr ""
 # <!-- TRANSLATION-FIXME: Translate a figure!! -->
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:845
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -1916,7 +1915,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--\\ Installed Packages                                                          \n"
@@ -1930,7 +1929,15 @@ msgstr ""
 "  --- gnome - The GNOME Desktop System\n"
 "  --- graphics - Utilities to create, view, and edit graphics files\n"
 "\n"
-"These packages are currently installed on your computer."
+"These packages are currently installed on your computer.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:875
@@ -1957,7 +1964,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:889
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -1983,7 +1990,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--\\ Installed Packages\n"
@@ -1999,7 +2006,13 @@ msgstr ""
 "\n"
 "Packages in the 'admin' section allow you to perform administrative tasks such\n"
 "as installing software, managing users, configuring and monitoring your system,\n"
-"examining network traffic, and so on."
+"examining network traffic, and so on.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:918
@@ -2035,7 +2048,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:939
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2061,7 +2074,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1       \n"
 "--\\ Installed Packages\n"
@@ -2079,7 +2092,11 @@ msgstr ""
 "package in 'main' is Free Software.\n"
 "\n"
 "For more information about what Debian considers to be Free Software, see\n"
-"http://www.debian.org/social_contract#guidelines"
+"http://www.debian.org/social_contract#guidelines\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:968
@@ -2127,7 +2144,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1002
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2153,7 +2170,7 @@ msgid ""
 "URL: http://www.frozen-bubble.org/\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1       \n"
 "i     frozen-bubble                                        1.0.0-5    1.0.0-5\n"
@@ -2174,7 +2191,8 @@ msgstr ""
 "\n"
 "This game is widely rumored to be responsible for delaying the Woody release.\n"
 "\n"
-"URL: http://www.frozen-bubble.org/"
+"URL: http://www.frozen-bubble.org/\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:1031
@@ -2221,7 +2239,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1061
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2247,7 +2265,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--- Installed Packages\n"
@@ -2261,7 +2279,15 @@ msgstr ""
 "  |Enter the new package tree limit:                                         |\n"
 "  |apti                                                                      |\n"
 "  |                             [ Ok ]                             [ Cancel ]|\n"
-"Th+--------------------------------------------------------------------------+ a"
+"Th+--------------------------------------------------------------------------+ a\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:1090
@@ -2290,7 +2316,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1106
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2316,7 +2342,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--\\ Installed Packages                                                          \n"
@@ -2330,7 +2356,15 @@ msgstr ""
 "--- Not Installed Packages\n"
 "--- Virtual Packages\n"
 "\n"
-"These packages are currently installed on your computer."
+"These packages are currently installed on your computer.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><title>
 #: en/aptitude.xml:1136 en/aptitude.xml:2971
@@ -2426,7 +2460,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1194
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2452,7 +2486,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1                  Will use 2925kB of disk space  DL Size: 1375kB\n"
 "  --\\ kde - The KDE Desktop System\n"
@@ -2467,7 +2501,14 @@ msgstr ""
 "p     kde-devel-extras                                      &lt;none&gt;     4:3.1.2\n"
 "The K Desktop Environment (development files)\n"
 "A metapackage containing dependencies for the core development suite of KDE\n"
-"including kdesdk, qt3-designer, and all core KDE -dev packages."
+"including kdesdk, qt3-designer, and all core KDE -dev packages.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><tip><para>
 #: en/aptitude.xml:1224
@@ -2524,7 +2565,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1259 en/aptitude.xml:4103
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2551,7 +2592,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.3.3       #Broken: 1   Will free 48.6MB of disk space\n"
 "i A   nautilus                                             2.10.1-4   2.10.1-4\n"
@@ -2637,7 +2678,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1327 en/aptitude.xml:4148
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2664,7 +2705,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Keep the following packages at their current version:\n"
@@ -2716,7 +2757,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><informalfigure><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1373
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2743,7 +2784,7 @@ msgid ""
 "[2(2)/...] Suggest 1 keep,1 downgrade\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Keep the following packages at their current version:\n"
@@ -2798,7 +2839,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1422
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2825,7 +2866,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Keep the following packages at their current version:\n"
@@ -2911,7 +2952,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1489
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -2938,7 +2979,7 @@ msgid ""
 "[2(2)/...] Suggest 1 removal\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Remove the following packages:\n"
@@ -3021,7 +3062,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1555
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -3048,7 +3089,7 @@ msgid ""
 "[2(2)/...] Suggest 1 removal\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Remove the following packages:\n"
@@ -3142,7 +3183,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:1630
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -3168,7 +3209,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1                  Will use 2925kB of disk space  DL Size: 1375kB\n"
 "--\\ Packages being automatically installed to satisfy dependencies               \n"
@@ -3186,7 +3227,11 @@ msgstr ""
 "you have chosen for installation.\n"
 "\n"
 "If you select a package, an explanation of its current state will appear in this\n"
-"space."
+"space.\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:1659
@@ -4780,7 +4825,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:2856
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -4806,7 +4851,7 @@ msgid ""
 "  --\\ Conflicts\n"
 "GNU C Library: Shared libraries and Timezone data"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "         Packages                  apt info                  libc6 info\n"
 "aptitude 0.3.1       \n"
@@ -4881,7 +4926,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:2916
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -4907,7 +4952,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1    \n"
 "--- Installed Packages\n"
@@ -4921,7 +4966,15 @@ msgstr ""
 "  |you currently do not have.  Would you like to change to the root account?|\n"
 "  |                                                                         |\n"
 "  |         [ Become root ]                  [ Don't become root ]          |\n"
-"Th+-------------------------------------------------------------------------+"
+"Th+-------------------------------------------------------------------------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2945
@@ -5377,7 +5430,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:3309
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -5417,7 +5470,7 @@ msgid ""
 "i A 0.5.25\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "i A --\\ apt                                                0.5.25     0.5.25\n"
@@ -5452,7 +5505,8 @@ msgstr ""
 "  --- Packages which depend on apt\n"
 "  --\\ Versions\n"
 "p A 0.6.25\n"
-"i A 0.5.25"
+"i A 0.5.25\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:3352
@@ -6024,7 +6078,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:3748
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -6051,7 +6105,7 @@ msgid ""
 "                                                                               #\n"
 "                                                                               #"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.3.0                    Will use 831kB of disk space   DL Size: 30.4MB\n"
 "--\\ Packages to be upgraded\n"
@@ -6486,7 +6540,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:4194
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -6513,7 +6567,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Keep the following packages at their current version:\n"
@@ -6620,7 +6674,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:4280
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -6647,7 +6701,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ Keep the following packages at their current version:\n"
@@ -6744,7 +6798,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:4354
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -6771,7 +6825,7 @@ msgid ""
 "[1(1)/...] Suggest 2 keeps\n"
 "e: Examine  !: Apply  .: Next  ,: Previous"
 msgstr ""
-"Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Resolver  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "                Packages                          Resolve Dependencies\n"
 "  --\\ gnome-desktop-environment depends upon sound-juicer\n"
@@ -8308,7 +8362,7 @@ msgstr "<literal>&Sbroken-type;</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5619
 msgid "<literal>~B<replaceable>depType</replaceable></literal>"
-msgstr "<literal>~B<replaceable>depType</replaceable></literal>"
+msgstr "<literal>~B<replaceable>依存種別</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5621
@@ -8325,7 +8379,7 @@ msgstr ""
 msgid ""
 "<literal>&Sbroken-type-term;(<replaceable>pattern</replaceable>)</literal>"
 msgstr ""
-"<literal>&Sbroken-type-term;(<replaceable>pattern</replaceable>)</literal>"
+"<literal>&Sbroken-type-term;(<replaceable>パターン</replaceable>)</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5628
@@ -8333,8 +8387,8 @@ msgid ""
 "<literal>~DB<optional><replaceable>depType</replaceable>:</"
 "optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>~DB<optional><replaceable>depType</replaceable>:</"
-"optional><replaceable>pattern</replaceable></literal>"
+"<literal>~DB<optional><replaceable>依存種別</replaceable>:</"
+"optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5630
@@ -8352,7 +8406,7 @@ msgstr ""
 msgid ""
 "<literal>&Sbroken-reverse-dep;(<replaceable>pattern</replaceable>)</literal>"
 msgstr ""
-"<literal>&Sbroken-reverse-dep;(<replaceable>pattern</replaceable>)</literal>"
+"<literal>&Sbroken-reverse-dep;(<replaceable>パターン</replaceable>)</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5638 en/aptitude.xml:5843
@@ -8360,8 +8414,8 @@ msgid ""
 "<literal>~RB<option><replaceable>depType</replaceable>:</"
 "option><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>~RB<option><replaceable>depType</replaceable>:</"
-"option><replaceable>pattern</replaceable></literal>"
+"<literal>~RB<option><replaceable>依存種別</replaceable>:</"
+"option><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5640
@@ -8376,12 +8430,12 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5648
 msgid "<literal>&Sconflicts;(<replaceable>pattern</replaceable>)</literal>"
-msgstr "<literal>&Sconflicts;(<replaceable>pattern</replaceable>)</literal>"
+msgstr "<literal>&Sconflicts;(<replaceable>パターン</replaceable>)</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5650
 msgid "<literal>~C<replaceable>pattern</replaceable></literal>"
-msgstr "<literal>~C<replaceable>pattern</replaceable></literal>"
+msgstr "<literal>~C<replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5652
@@ -8412,7 +8466,7 @@ msgstr "自動的にインストールされたパッケージにマッチしま
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5666
 msgid "<literal>&Sdep;(<replaceable>pattern</replaceable>)</literal>"
-msgstr "<literal>&Sdep;(<replaceable>pattern</replaceable>)</literal>"
+msgstr "<literal>&Sdep;(<replaceable>パターン</replaceable>)</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5667
@@ -8420,8 +8474,8 @@ msgid ""
 "<literal>~D<optional><replaceable>depType</replaceable>:</"
 "optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>~D<optional><replaceable>depType</replaceable>:</"
-"optional><replaceable>pattern</replaceable></literal>"
+"<literal>~D<optional><replaceable>依存種別</replaceable>:</"
+"optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5669
@@ -8475,7 +8529,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5695
 msgid "<literal>&Sexact-name;(<replaceable>name</replaceable>)</literal>"
-msgstr "<literal>&Sexact-name;(<replaceable>name</replaceable>)</literal>"
+msgstr "<literal>&Sexact-name;(<replaceable>名前</replaceable>)</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5698
@@ -8506,7 +8560,7 @@ msgid ""
 "<literal>&Sfor; <replaceable>variable</replaceable>: <replaceable>pattern</"
 "replaceable></literal>"
 msgstr ""
-"<literal>&Sfor; <replaceable>variable</replaceable>: <replaceable>pattern</"
+"<literal>&Sfor; <replaceable>変数</replaceable>: <replaceable>パターン</"
 "replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -8761,12 +8815,11 @@ msgstr "<literal>&Sreverse-dep;(<replaceable>パターン</replaceable>)</litera
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5832
-#, fuzzy
 msgid ""
 "<literal>~R<optional><replaceable>depType</replaceable>:</"
 "optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>~R<optional><replaceable>depType</replaceable>:</"
+"<literal>~R<optional><replaceable>依存種別</replaceable>:</"
 "optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -9427,17 +9480,15 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6300
-#, fuzzy
 msgid ""
 "<literal>?broken-<replaceable>depType</replaceable></literal>, "
 "<literal>~B<replaceable>depType</replaceable></literal>"
 msgstr ""
-"<literal><replaceable>条件 1</replaceable> | <replaceable>条件 2</"
-"replaceable></literal>"
+"<literal>?broken-<replaceable>依存種別</replaceable></literal>, "
+"<literal>~B<replaceable>依存種別</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6304
-#, fuzzy
 msgid ""
 "Matches packages which have an unfulfilled (<quote>broken</quote>)  "
 "dependency of the given <replaceable>depType</replaceable>.  "
@@ -9448,25 +9499,25 @@ msgid ""
 "<quote><literal>conflicts</literal></quote>, or <quote><literal>replaces</"
 "literal></quote>."
 msgstr ""
-"指定された<replaceable>種類</replaceable>の依存関係が満たされていない "
-"(<quote>破損している</quote>) パッケージにマッチします。<replaceable>種類</"
-"replaceable>には、<quote><literal>depends</literal></quote> (依存)、"
+"指定された<replaceable>依存種別</replaceable>の依存関係が満たされていない "
+"(<quote>破損している</quote>) パッケージにマッチします。<replaceable>依存種別"
+"</replaceable>には、<quote><literal>depends</literal></quote> (依存)、"
 "<quote><literal>predepends</literal></quote> (事前依存)、"
 "<quote><literal>recommends</literal></quote> (推奨)、"
-"<quote><literal>suggests</literal></quote> (提案)、"
-"<quote><literal>conflicts</literal></quote> (衝突)、"
-"<quote><literal>replaces</literal></quote> (置換) を与えることが可能です。"
+"<quote><literal>suggests</literal></quote> (提案)、<quote><literal>breaks</"
+"literal></quote> (破損)、<quote><literal>conflicts</literal></quote> (衝突)、"
+"<quote><literal>replaces</literal></quote> (置換) を与えられます。"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6319
-#, fuzzy
 msgid ""
 "<literal>?broken-<replaceable>depType</replaceable>(<replaceable>pattern</"
 "replaceable>)</literal>, <literal>~DB<optional><replaceable>depType</"
 "replaceable>:</optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>-q<optional>=<replaceable>n</replaceable></optional></literal>, "
-"<literal>--quiet<optional>=<replaceable>n</replaceable></optional></literal>"
+"<literal>?broken-<replaceable>依存種別</replaceable>(<replaceable>パターン</"
+"replaceable>)</literal>, <literal>~DB<optional><replaceable>依存種別</"
+"replaceable>:</optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6323
@@ -9526,14 +9577,14 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6362
-#, fuzzy
 msgid ""
 "<literal>?<replaceable>depType</replaceable>(<replaceable>pattern</"
 "replaceable>)</literal>, <literal>~D<optional><replaceable>depType</"
 "replaceable>:</optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>-q<optional>=<replaceable>n</replaceable></optional></literal>, "
-"<literal>--quiet<optional>=<replaceable>n</replaceable></optional></literal>"
+"<literal>?<replaceable>依存種別</replaceable>(<replaceable>パターン</"
+"replaceable>)</literal>, <literal>~D<optional><replaceable>依存種別</"
+"replaceable>:</optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6366
@@ -9547,10 +9598,10 @@ msgid ""
 "If the short form (<literal>~D</literal>) is used and <replaceable>depType</"
 "replaceable> is not present, it defaults to <literal>depends</literal>."
 msgstr ""
-"<replaceable>種類</replaceable>には、<quote><literal>provides</literal></"
+"<replaceable>依存種別</replaceable>には、<quote><literal>provides</literal></"
 "quote> (提供) と <link linkend='searchBrokenType'><literal>~B</literal> の説"
 "明</link>で挙げられている依存関係の種類の 1 つのうち、どちらか一方を指定して"
-"ください。<replaceable>種類</replaceable>を指定しない場合、デフォルトで "
+"ください。<replaceable>依存種別</replaceable>を指定しない場合、デフォルトで "
 "<literal>depends</literal> (依存) が指定されます。<literal>B</literal> を指定"
 "すると、破損している依存関係のみが対象となります。"
 
@@ -9566,12 +9617,12 @@ msgid ""
 "<replaceable>depType</replaceable> upon a package version which matches "
 "<replaceable>pattern</replaceable>."
 msgstr ""
-"<replaceable>種類</replaceable>が<quote><literal>provides</literal></quote>の"
-"場合、<replaceable>条件</replaceable>にマッチするパッケージを提供するパッケー"
-"ジにマッチします (<literal>~P</literal> と等価です)。それ以外の場合は、"
-"<replaceable>条件</replaceable>にマッチするバージョンのパッケージに対して"
-"<replaceable>種類</replaceable>という種類の依存関係を宣言しているパッケージに"
-"マッチします。"
+"<replaceable>依存種別</replaceable>が<quote><literal>provides</literal></"
+"quote>の場合、<replaceable>パターン</replaceable>にマッチするパッケージを提供"
+"するパッケージにマッチします (<literal>~P</literal> と等価です)。それ以外の場"
+"合は、<replaceable>パターン</replaceable>にマッチするバージョンのパッケージに"
+"対して<replaceable>依存種別</replaceable>という種類の依存関係を宣言している"
+"パッケージにマッチします。"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6392
@@ -9599,7 +9650,7 @@ msgstr "<literal>?essential</literal>, <literal>~E</literal>"
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6407
 msgid "Matches Essential packages."
-msgstr "必須パッケージにマッチします。"
+msgstr "不可欠パッケージにマッチします。"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6413
@@ -9858,27 +9909,25 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6615
-#, fuzzy
 msgid ""
 "<literal>?origin(<replaceable>origin</replaceable>)</literal>, "
 "<literal>~O<replaceable>origin</replaceable></literal>"
 msgstr ""
-"<literal>-o</literal> <replaceable>キー</replaceable><literal>=</"
-"literal><replaceable>値</replaceable>"
+"<literal>?origin(<replaceable>提供元</replaceable>)</literal>, "
+"<literal>~O<replaceable>提供元</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6619
-#, fuzzy
 msgid ""
 "Matches package versions whose origin matches the regular expression "
 "<replaceable>origin</replaceable>.  For instance, <quote><literal>!?origin"
 "(debian)</literal></quote> will find any unofficial packages on your system "
 "(packages not from the Debian archive)."
 msgstr ""
-"正規表現<replaceable>提供元</replaceable>がパッケージ提供元にマッチするパッ"
-"ケージバージョンにマッチします。例えば、<quote><literal>!~Odebian</literal></"
-"quote>を用いるとシステム上のあらゆる非公式パッケージ (Debian アーカイブ由来で"
-"ないパッケージ) を見つけることが可能です。"
+"正規表現<replaceable>提供元</replaceable>が、パッケージ提供元にマッチするパッ"
+"ケージバージョンにマッチします。例えば、<quote><literal>!?origin(debian)</"
+"literal></quote> とすると、システム上のあらゆる非公式パッケージ (Debian アー"
+"カイブ由来でないパッケージ) を見つけます。"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6630
@@ -9933,14 +9982,14 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6664
-#, fuzzy
 msgid ""
 "<literal>?reverse-<replaceable>depType</replaceable>(<replaceable>pattern</"
 "replaceable>)</literal>, <literal>~R<optional><replaceable>depType</"
 "replaceable>:</optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<literal>-q<optional>=<replaceable>n</replaceable></optional></literal>, "
-"<literal>--quiet<optional>=<replaceable>n</replaceable></optional></literal>"
+"<literal>?reverse-<replaceable>依存種別</replaceable>(<replaceable>パターン</"
+"replaceable>)</literal>, <literal>~R<optional><replaceable>依存種別</"
+"replaceable>:</optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6668 en/aptitude.xml:6694
@@ -9953,10 +10002,10 @@ msgid ""
 "<replaceable>depType</replaceable> is not present, it defaults to "
 "<literal>depends</literal>."
 msgstr ""
-"<replaceable>種類</replaceable>には、<quote><literal>provides</literal></"
+"<replaceable>依存種別</replaceable>には、<quote><literal>provides</literal></"
 "quote> (提供) と <link linkend='searchBrokenType'><literal>~B</literal> の説"
 "明</link>で挙げられている依存関係の種類の 1 つのうち、どちらか一方を指定して"
-"ください。<replaceable>種類</replaceable>を指定しない場合、デフォルトで "
+"ください。<replaceable>依存種別</replaceable>を指定しない場合、デフォルトで "
 "<literal>depends</literal> (依存) が指定されます。<literal>B</literal> を指定"
 "すると、破損している依存関係のみが対象となります。"
 
@@ -9970,15 +10019,15 @@ msgid ""
 "which a package version matching <replaceable>pattern</replaceable> declares "
 "a dependency of type <replaceable>depType</replaceable> upon."
 msgstr ""
-"<replaceable>種類</replaceable>が<quote><literal>provides</literal></quote>の"
-"場合、<replaceable>条件</replaceable>にマッチするバージョンのパッケージが名前"
-"を提供しているパッケージにマッチします。それ以外の場合は、<replaceable>条件</"
-"replaceable>にマッチするバージョンのパッケージが<replaceable>種類</"
-"replaceable>という種類の依存関係を宣言しているパッケージにマッチします。"
+"<replaceable>依存種別</replaceable>が<quote><literal>provides</literal></"
+"quote>の場合、<replaceable>パターン</replaceable>にマッチするバージョンのパッ"
+"ケージが名前を提供しているパッケージにマッチします。それ以外の場合は、"
+"<replaceable>パターン</replaceable>にマッチするバージョンのパッケージが"
+"<replaceable>依存種別</replaceable>という種類の依存関係を宣言しているパッケー"
+"ジにマッチします。"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:6690
-#, fuzzy
 msgid ""
 "<literal>?reverse-broken-<replaceable>depType</replaceable>"
 "(<replaceable>pattern</replaceable>)</literal>, <literal>?broken-reverse-"
@@ -9986,10 +10035,11 @@ msgid ""
 "literal>, <literal>~RB<optional><replaceable>depType</replaceable>:</"
 "optional><replaceable>pattern</replaceable></literal>"
 msgstr ""
-"<replaceable>Name</replaceable> <replaceable>Type</replaceable> { Row "
-"<replaceable>row</replaceable>; Column <replaceable>column</replaceable>; "
-"Width <replaceable>width</replaceable>; Height <replaceable>height</"
-"replaceable>; <replaceable>additional options...</replaceable> };"
+"<literal>?reverse-broken-<replaceable>依存種別</replaceable>(<replaceable>パ"
+"ターン</replaceable>)</literal>, <literal>?broken-reverse-<replaceable>依存種"
+"別</replaceable>(<replaceable>パターン</replaceable>)</literal>, "
+"<literal>~RB<optional><replaceable>依存種別</replaceable>:</"
+"optional><replaceable>パターン</replaceable></literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6704
@@ -11464,7 +11514,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
 #: en/aptitude.xml:7694
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "priority"
 msgstr "優先度"
 
@@ -11491,30 +11541,27 @@ msgstr "<replaceable>モード</replaceable>には以下のいずれかを指定
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
 #: en/aptitude.xml:7718
-#, fuzzy
 msgid "<literal>none</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>none</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7722
-#, fuzzy
 msgid ""
 "Group based on the whole Section field, so categories like <quote>non-free/"
 "games</quote> will be created.  This is the default if no <replaceable>mode</"
 "replaceable> is specified."
 msgstr ""
 "セクションフィールド全体に基づいたグループ。<quote>non-free/games</quote> の"
-"ようなカテゴリが作成されます。"
+"ようなカテゴリが作成されます。<replaceable>mode</replaceable> を指定しない場"
+"合のデフォルトです。"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
 #: en/aptitude.xml:7731
-#, fuzzy
 msgid "<literal>topdir</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>topdir</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7735
-#, fuzzy
 msgid ""
 "Group based on the part of the Section field before the first <literal>/</"
 "literal> character; if this part of the Section is not recognized, or if "
@@ -11523,14 +11570,15 @@ msgid ""
 "literal> will be used instead."
 msgstr ""
 "セクションフィールドのうち <quote><literal>/</literal></quote> より前の部分に"
-"基づいたグループ。<literal>/</literal> がない場合は <literal>main</literal> "
-"が代わりに使用されます。"
+"基づいたグループ。セクションのパートが認識できない場合や <literal>/</"
+"literal> がない場合は、 <literal><link linkend='configTop-"
+"Sections'>Aptitude::Sections::Top-Sections</link></literal> にある先頭のエン"
+"トリを、代わりに使用します。"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
 #: en/aptitude.xml:7748
-#, fuzzy
 msgid "<literal>subdir</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>subdir</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7752
@@ -11548,9 +11596,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
 #: en/aptitude.xml:7765
-#, fuzzy
 msgid "<literal>subdirs</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>subdirs</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7769
@@ -11582,9 +11629,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
 #: en/aptitude.xml:7806
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "status"
-msgstr "信頼状態"
+msgstr "状態"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7810
@@ -11769,9 +11816,8 @@ msgstr "以下の規則が利用可能です。"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:7935
-#, fuzzy
 msgid "<literal>installsize</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>installsize</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7939
@@ -11781,9 +11827,8 @@ msgstr "インストール時に必要となるサイズの推定量でパッケ
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:7946 en/aptitude.xml:12138
-#, fuzzy
 msgid "<literal>name</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>name</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7950
@@ -11797,9 +11842,8 @@ msgstr "優先度でパッケージを並び替えます。"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:7966
-#, fuzzy
 msgid "<literal>version</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>version</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7970
@@ -11808,9 +11852,8 @@ msgstr "バージョン番号でパッケージを並び替えます。"
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:7979
-#, fuzzy
 msgid "Customizing keybindings"
-msgstr "Customizing keybindings"
+msgstr "キーバインドのカスタマイズ"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:7982
@@ -12072,9 +12115,8 @@ msgstr "<literal>CollapseTree</literal>"
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8122 en/aptitude.xml:8337 en/aptitude.xml:8513
 #: en/aptitude.xml:8522
-#, fuzzy
 msgid "No binding"
-msgstr "No binding"
+msgstr "バインドなし"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8124
@@ -13613,7 +13655,6 @@ msgstr "Exit キー。"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8963
-#, fuzzy
 msgid ""
 "<literal>f1</literal>, <literal>f2</literal>, ..., <literal>f10</literal>"
 msgstr ""
@@ -15179,9 +15220,8 @@ msgstr "The following types of display elements are available:"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:9950
-#, fuzzy
 msgid "<literal>Description</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>Description</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:9954
@@ -15219,9 +15259,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:9978
-#, fuzzy
 msgid "<literal>MainWidget</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>MainWidget</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:9982
@@ -15237,9 +15276,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:9992
-#, fuzzy
 msgid "<literal>Static</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>Static</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:9996
@@ -15385,7 +15423,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><screen>
 #: en/aptitude.xml:10092
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Header Static {\n"
 "  Row 0;\n"
@@ -15431,12 +15469,11 @@ msgstr "The following options are available for display elements:"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10117
-#, fuzzy
 msgid ""
 "<literal>ColAlign</literal> <replaceable>alignment</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>ColAlign</literal> <replaceable>alignment</replaceable><literal>;</"
+"<literal>ColAlign</literal> <replaceable>位置</replaceable><literal>;</"
 "literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
@@ -15465,7 +15502,6 @@ msgstr "If this option is not present, it defaults to <literal>Left</literal>."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10141
-#, fuzzy
 msgid ""
 "<literal>ColExpand</literal> <literal>true</literal>|<literal>false;</"
 "literal>"
@@ -15495,13 +15531,11 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10160
-#, fuzzy
 msgid ""
 "<literal>Color</literal> <replaceable>colorname</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>Color</literal> <replaceable>colorname</replaceable><literal>;</"
-"literal>"
+"<literal>Color</literal> <replaceable>色名</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10165
@@ -15533,7 +15567,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10183
-#, fuzzy
 msgid ""
 "<literal>ColShrink</literal> <literal>true</literal>|<literal>false;</"
 "literal>"
@@ -15561,13 +15594,11 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10207
-#, fuzzy
 msgid ""
 "<literal>Column</literal> <replaceable>column</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>Column</literal> <replaceable>column</replaceable><literal>;</"
-"literal>"
+"<literal>Column</literal> <replaceable>列</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10211
@@ -15581,13 +15612,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10219
-#, fuzzy
 msgid ""
 "<literal>Columns</literal> <replaceable>format</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>Columns</literal> <replaceable>format</replaceable><literal>;</"
-"literal>"
+"<literal>Columns</literal> <replaceable>フォーマット</replaceable><literal>;"
+"</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10223
@@ -15607,13 +15637,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10235
-#, fuzzy
 msgid ""
 "<literal>ColumnsCfg</literal> <literal>HEADER</literal>|<literal>STATUS</"
 "literal>|<replaceable>name</replaceable><literal>;</literal>"
 msgstr ""
 "<literal>ColumnsCfg</literal> <literal>HEADER</literal>|<literal>STATUS</"
-"literal>|<replaceable>name</replaceable><literal>;</literal>"
+"literal>|<replaceable>名前</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10239
@@ -18780,7 +18809,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12519
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -18806,7 +18835,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "--\\ Installed Packages\n"
 "  --\\ Priority required\n"
@@ -18822,7 +18851,13 @@ msgstr ""
 "This package contains the basic filesystem hierarchy of a Debian system, and\n"
 "several important miscellaneous files, such as /etc/debian_version,\n"
 "/etc/host.conf, /etc/issue, /etc/motd, /etc/profile, /etc/nsswitch.conf, and\n"
-"others, and the text of several common licenses in use on Debian systems."
+"others, and the text of several common licenses in use on Debian systems.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:12550
@@ -18853,7 +18888,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12569
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -18880,7 +18915,7 @@ msgid ""
 "i   discover      2.0.4-5    2.0.4-5    one including the patches on\n"
 "Utilities for using ACPI power management"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "aptitude 0.2.14.1\n"
 "--\\ Installed Packages                  Modern computers support the Advanced  #\n"
@@ -18933,7 +18968,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12620
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -18959,7 +18994,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "Minesweeper                                              10/10 mines  13 seconds\n"
 "\n"
@@ -18976,7 +19011,12 @@ msgstr ""
 "                                   |        |\n"
 "                                   |        |\n"
 "                                   |        |\n"
-"                                   +--------+"
+"                                   +--------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:12649
@@ -19017,7 +19057,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12672
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -19043,7 +19083,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "Minesweeper                                             10/10 mines  387 seconds\n"
 "\n"
@@ -19060,7 +19100,12 @@ msgstr ""
 "                                   |...113  |\n"
 "                                   |1122    |\n"
 "                                   |        |\n"
-"                                   +--------+"
+"                                   +--------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:12701
@@ -19099,7 +19144,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12723
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -19125,7 +19170,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "Minesweeper                                              9/10 mines  961 seconds\n"
 "\n"
@@ -19142,7 +19187,12 @@ msgstr ""
 "                                   |...113  |\n"
 "                                   |1122    |\n"
 "                                   |        |\n"
-"                                   +--------+"
+"                                   +--------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 # <!-- TRANSLATION-FIXME: Do we need to describe a key pressed is Enter?-->
 #. type: Content of: <book><chapter><section><para>
@@ -19176,7 +19226,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12772
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -19202,7 +19252,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "Minesweeper                                              9/10 mines  2290 seconds\n"
 "\n"
@@ -19219,7 +19269,12 @@ msgstr ""
 "                                   |...113  |\n"
 "                                   |1122    |\n"
 "                                   |        |\n"
-"                                   +--------+"
+"                                   +--------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:12801
@@ -19242,7 +19297,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><screenshot><mediaobject><textobject><screen>
 #: en/aptitude.xml:12813
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
@@ -19268,7 +19323,7 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Actions  Undo  Package  Search  Options  Views  Help\n"
+" Actions  Undo  Package  Search  Options  Views  Help\n"
 "f10: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs\n"
 "Minesweeper                                   Minesweeper    Lost in 2388 seconds\n"
 "\n"
@@ -19285,7 +19340,12 @@ msgstr ""
 "                                   |...113^ |\n"
 "                                   |1122* ^ |\n"
 "                                   | ^ ^   ^|\n"
-"                                   +--------+"
+"                                   +--------+\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:12842
@@ -22533,8 +22593,8 @@ msgid ""
 msgstr ""
 "yes/no プロンプトが表示されたときにユーザが<quote>yes</quote>と入力したと仮定"
 "します。特に、パッケージをインストール・更新・削除するときに現れるプロンプト"
-"を隠します。必須パッケージの削除などといった<quote>危険な</quote>アクションに"
-"対するプロンプトはそのまま表示され続けます。このオプションは <literal>-P</"
+"を隠します。不可欠パッケージの削除などといった<quote>危険な</quote>アクション"
+"に対するプロンプトはそのまま表示され続けます。このオプションは <literal>-P</"
 "literal> を上書きします。"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
