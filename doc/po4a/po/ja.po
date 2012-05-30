@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: aptitude 0.4.4\n"
 "Report-Msgid-Bugs-To: aptitude@packages.debian.org\n"
 "POT-Creation-Date: 2012-05-23 10:27+0900\n"
-"PO-Revision-Date: 2012-05-25 17:52+0900\n"
+"PO-Revision-Date: 2012-05-30 13:21+0900\n"
 "Last-Translator: KURASAWA Nozomu <nabetaro@debian.or.jp>\n"
 "Language-Team: Japanese\n"
 "Language: \n"
@@ -899,7 +899,6 @@ msgstr ""
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
 #: en/aptitude.xml:157
-#, fuzzy
 msgid ""
 "This manual is free software; you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -913,7 +912,6 @@ msgstr ""
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
 #: en/aptitude.xml:164
-#, fuzzy
 msgid ""
 "This manual is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -927,7 +925,6 @@ msgstr ""
 
 #. type: Content of: <book><bookinfo><legalnotice><para>
 #: en/aptitude.xml:171
-#, fuzzy
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this manual; if not, write to the Free Software Foundation, Inc., 59 Temple "
@@ -3297,7 +3294,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:1693
-#, fuzzy
 msgid ""
 "<replaceable>action</replaceable> tells &aptitude; what action it is to "
 "take; the remaining arguments are used in an option-specific fashion.  "
@@ -3306,7 +3302,8 @@ msgid ""
 msgstr ""
 "<replaceable>アクション</replaceable>はとるべきアクションを &aptitude; に教"
 "え、残りの引数はオプションごとに異なる方法で使用されます。通常、残りの引数は"
-"パッケージ名とコマンドラインスイッチから成ります<footnote>"
+"パッケージ名とコマンドラインスイッチから成ります<placeholder type=\"footnote"
+"\" id=\"0\"/>。"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:1702
@@ -3315,9 +3312,8 @@ msgstr "最も重要なアクションを以下に示します。"
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term><cmdsynopsis>
 #: en/aptitude.xml:1709
-#, fuzzy
 msgid "  <command>aptitude</command> <arg choice='plain'>update</arg>"
-msgstr "<command>aptitude</command> <arg choice='plain'>update</arg>"
+msgstr "  <command>aptitude</command> <arg choice='plain'>update</arg>"
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:1708 en/aptitude.xml:1725 en/aptitude.xml:1749
@@ -3336,9 +3332,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term><cmdsynopsis>
 #: en/aptitude.xml:1726
-#, fuzzy
 msgid "  <command>aptitude</command> <arg choice='plain'>safe-upgrade</arg>"
-msgstr "<command>aptitude</command> <arg choice='plain'>upgrade</arg>"
+msgstr "  <command>aptitude</command> <arg choice='plain'>safe-upgrade</arg>"
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:1733
@@ -3366,9 +3361,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term><cmdsynopsis>
 #: en/aptitude.xml:1750
-#, fuzzy
 msgid "  <command>aptitude</command> <arg choice='plain'>full-upgrade</arg>"
-msgstr "<command>aptitude</command> <arg choice='plain'>upgrade</arg>"
+msgstr "  <command>aptitude</command> <arg choice='plain'>full-upgrade</arg>"
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:1757
@@ -3395,14 +3389,14 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term><cmdsynopsis>
 #: en/aptitude.xml:1780
-#, fuzzy
 msgid ""
 "  <command>aptitude</command> <group> <arg choice='plain'>install</arg> <arg "
 "choice='plain'>remove</arg> <arg choice='plain'>purge</arg> </group> <arg "
 "choice='plain'><replaceable>pkg1</replaceable></arg> <arg "
 "rep='repeat'><replaceable>pkg2</replaceable></arg>"
 msgstr ""
-"<command>aptitude</command> <arg choice='plain'>show</arg> <arg "
+"  <command>aptitude</command> <group> <arg choice='plain'>install</arg> <arg "
+"choice='plain'>remove</arg> <arg choice='plain'>purge</arg> </group> <arg "
 "choice='plain'><replaceable>パッケージ 1</replaceable></arg> <arg "
 "rep='repeat'><replaceable>パッケージ 2</replaceable></arg>"
 
@@ -3466,13 +3460,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term><cmdsynopsis>
 #: en/aptitude.xml:1842
-#, fuzzy
 msgid ""
 "  <command>aptitude</command> <arg choice='plain'>show</arg> <arg "
 "choice='plain'><replaceable>pkg1</replaceable></arg> <arg "
 "rep='repeat'><replaceable>pkg2</replaceable></arg>"
 msgstr ""
-"<command>aptitude</command> <arg choice='plain'>show</arg> <arg "
+"  <command>aptitude</command> <arg choice='plain'>show</arg> <arg "
 "choice='plain'><replaceable>パッケージ 1</replaceable></arg> <arg "
 "rep='repeat'><replaceable>パッケージ 2</replaceable></arg>"
 
@@ -3758,33 +3751,27 @@ msgstr "&aptitude; リファレンスガイド"
 
 #. type: Content of: <book><chapter><blockquote><attribution>
 #: en/aptitude.xml:2002
-#, fuzzy
 msgid ""
 "<personname> <firstname>Lewis</firstname> <surname>Carrol</surname> </"
 "personname>, <citetitle pubwork='book'>Alice in Wonderland</citetitle>"
 msgstr ""
-"<personname> <firstname>Lewis</firstname> <surname>Carrol</surname> </"
-"personname>, <citetitle pubwork='book'>Alice in Wonderland</citetitle>"
+"<personname lang=\"en\"> <firstname>ルイス</firstname> <surname>キャロル</"
+"surname> </personname>, <citetitle pubwork='book'>不思議の国のアリス</"
+"citetitle>"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:2010
-#, fuzzy
 msgid ""
 "The White Rabbit put on his spectacles. 'Where shall I begin, please your "
 "Majesty?' he asked."
-msgstr ""
-"The White Rabbit put on his spectacles. 'Where shall I begin, please your "
-"Majesty?' he asked."
+msgstr "白兎は眼鏡をかけて言いました。「どこから始めましょうか、陛下?」"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:2015
-#, fuzzy
 msgid ""
 "'Begin at the beginning,' the King said gravely, 'and go on till you come to "
 "the end: then stop.'"
-msgstr ""
-"'Begin at the beginning,' the King said gravely, 'and go on till you come to "
-"the end: then stop.'"
+msgstr "「最初の最初からだ」王は重々しく言いました。「そして最後の最後まで」"
 
 #. type: Content of: <book><chapter><para><footnote><para>
 #: en/aptitude.xml:2025
@@ -3799,7 +3786,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><para>
 #: en/aptitude.xml:2021
-#, fuzzy
 msgid ""
 "&aptitude; is a large program with many features, and it is sometimes "
 "difficult to remember how to do something, or even to remember whether that "
@@ -3810,8 +3796,8 @@ msgstr ""
 "&aptitude; は多くの機能をもった大きなプログラムなので、あることを行う方法を思"
 "い出すのが難しいことがあります。あるいは、そもそもあることが可能なのかを思い"
 "出すことさえ難しいかもしれません。実際、作者が受け取った機能に関する要望に"
-"は、既に存在するのに見つけにくいだけの機能を求めるものが多く含まれています。"
-"<footnote>"
+"は、既に存在するのに見つけにくいだけの機能を求めるものが多く含まれています"
+"<placeholder type=\"footnote\" id=\"0\"/>。"
 
 #. type: Content of: <book><chapter><para>
 #: en/aptitude.xml:2033
@@ -3841,19 +3827,18 @@ msgstr ""
 #. type: Content of: <book><chapter><section><title>
 #: en/aptitude.xml:2050
 msgid "The &aptitude; terminal user interface"
-msgstr ""
+msgstr "&aptitude; ターミナルユーザインターフェース"
 
 #. type: Content of: <book><chapter><section><para>
 #: en/aptitude.xml:2053
-#, fuzzy
 msgid ""
 "This section describes the parts of the terminal-based user interface of "
 "&aptitude; that do not deal with <link "
 "linkend='secManagingPackages'>managing packages</link>."
 msgstr ""
-"このセクションでは、&aptitude; のユーザインタフェースのうち<link "
-"linkend='secManagingPackages'>パッケージの管理</link>を取り扱わない部分を説明"
-"します。"
+"このセクションでは、&aptitude; のターミナルベースユーザインタフェースのうち"
+"<link linkend='secManagingPackages'>パッケージの管理</link>を取り扱わない部分"
+"を説明します。"
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2059
@@ -4095,9 +4080,9 @@ msgstr "&actions-quit;"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2206
-#, fuzzy
 msgid "Quit &aptitude;, saving any changes to package states."
-msgstr "パッケージの状態に関するあらゆる変更を保存してプログラムを終了します。"
+msgstr ""
+"パッケージの状態に関するあらゆる変更を保存して、&aptitude; を終了します。"
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:2217
@@ -5569,9 +5554,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3394
-#, fuzzy
 msgid "Modifying package states"
-msgstr "Modifying package states"
+msgstr "パッケージ状態の変更"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3397
@@ -5611,7 +5595,7 @@ msgstr "Install: &package-install;"
 #: en/aptitude.xml:3425
 #, fuzzy
 msgid "Flag the current package for installation."
-msgstr "Flag the current package for installation."
+msgstr "現在選択中のパッケージに削除用の印をつけます"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3428
@@ -5629,25 +5613,25 @@ msgstr ""
 #: en/aptitude.xml:3438
 #, fuzzy
 msgid "Remove: &package-remove;"
-msgstr "Remove: &package-remove;"
+msgstr "パッケージを削除"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3441
 #, fuzzy
 msgid "Flag the currently selected package for removal."
-msgstr "Flag the currently selected package for removal."
+msgstr "現在選択中のパッケージに削除用の印をつけます"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3445
 #, fuzzy
 msgid "If the package is installed, it will be removed."
-msgstr "If the package is installed, it will be removed."
+msgstr "%s パッケージはインストールされていないので削除されません\n"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:3451
 #, fuzzy
 msgid "Purge: &package-purge;"
-msgstr "Purge: &package-purge;"
+msgstr "パッケージマネージャ"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3454
@@ -5671,7 +5655,7 @@ msgstr ""
 #: en/aptitude.xml:3466
 #, fuzzy
 msgid "Keep: &package-keep;"
-msgstr "Keep: &package-keep;"
+msgstr "パッケージマネージャ"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3470
@@ -5695,7 +5679,7 @@ msgstr ""
 #: en/aptitude.xml:3484
 #, fuzzy
 msgid "Hold: &package-hold;"
-msgstr "Hold: &package-hold;"
+msgstr "パッケージマネージャ"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3488
@@ -5768,13 +5752,13 @@ msgstr ""
 #: en/aptitude.xml:3542
 #, fuzzy
 msgid "Reinstall: press <keycap>L</keycap>"
-msgstr "Reinstall: press <keycap>L</keycap>"
+msgstr " ([z] で中止)"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3548
 #, fuzzy
 msgid "Reinstalls the package."
-msgstr "Reinstalls the package."
+msgstr "パッケージマネージャ"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><para>
 #: en/aptitude.xml:3552
@@ -5794,7 +5778,10 @@ msgstr ""
 #: en/aptitude.xml:3564
 #, fuzzy
 msgid "&package-markauto;, &package-markmanual;"
-msgstr "&package-markauto;, &package-markmanual;"
+msgstr ""
+"\n"
+"パッケージ %s をインストール中に:\n"
+"\n"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:3567
@@ -6270,7 +6257,7 @@ msgstr ""
 #: en/aptitude.xml:3869
 #, fuzzy
 msgid "Resolving package dependencies"
-msgstr "パッケージに壊れた依存関係があります。"
+msgstr "パッケージの依存性を解決できません。"
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3872
@@ -6314,7 +6301,7 @@ msgstr ""
 #: en/aptitude.xml:3903
 #, fuzzy
 msgid "Immediate dependency resolution"
-msgstr "Advance the dependency resolver to the next solution."
+msgstr "依存関係の解決に失敗しました"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3906
@@ -6474,7 +6461,7 @@ msgstr ""
 #: en/aptitude.xml:4083
 #, fuzzy
 msgid "Resolving Dependencies Interactively"
-msgstr "依存関係の問題の解決"
+msgstr "設定ダイアログを表示する"
 
 # <!-- TRANSLATION-FIXME: ja.po の方の訳語と統一し、必要であれば改良する!! -->
 #. type: Content of: <book><chapter><section><section><para>
@@ -6863,8 +6850,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4392
+#, fuzzy
 msgid "Costs and cost components"
-msgstr ""
+msgstr "コンポーネントの作成と削除"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4395
@@ -6885,8 +6873,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><example><title>
 #: en/aptitude.xml:4411
+#, fuzzy
 msgid "Sample resolver costs"
-msgstr ""
+msgstr "Avahi リゾルバが失敗しました: %s"
 
 #. type: Content of: <book><chapter><section><section><section><example><para>
 #: en/aptitude.xml:4414
@@ -6900,7 +6889,7 @@ msgstr ""
 #: en/aptitude.xml:4419
 #, fuzzy, no-wrap
 msgid "safety, priority"
-msgstr "優先度"
+msgstr "印刷ジョブの優先順位"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:4419 en/aptitude.xml:4426 en/aptitude.xml:4434
@@ -6916,9 +6905,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4426
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "removals, canceled-actions"
-msgstr ""
+msgstr "追加のWMアクション"
 
 #. type: Content of: <book><chapter><section><section><section><example><para>
 #: en/aptitude.xml:4429
@@ -6929,9 +6918,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4434
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "removals + 2 * canceled-actions"
-msgstr ""
+msgstr "追加のWMアクション"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4438
@@ -6979,8 +6968,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><table><title>
 #: en/aptitude.xml:4484
+#, fuzzy
 msgid "Basic cost components"
-msgstr ""
+msgstr "土木工学用の部品"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><segtitle>
 #: en/aptitude.xml:4489 en/aptitude.xml:7086
@@ -6989,8 +6979,9 @@ msgstr "名前"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><thead><row><entry>
 #: en/aptitude.xml:4490
+#, fuzzy
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4497
@@ -7001,8 +6992,9 @@ msgstr "<literal>broken-holds</literal>"
 #: en/aptitude.xml:4498 en/aptitude.xml:4509 en/aptitude.xml:4519
 #: en/aptitude.xml:4528 en/aptitude.xml:4549 en/aptitude.xml:4558
 #: en/aptitude.xml:4578
+#, fuzzy
 msgid "Counter"
-msgstr ""
+msgstr "<b>%n:</b> カウンター"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4500
@@ -7057,8 +7049,9 @@ msgstr "<literal>priority</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4537 en/aptitude.xml:4567
+#, fuzzy
 msgid "Level"
-msgstr ""
+msgstr "レベル"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4539
@@ -7196,13 +7189,15 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4653
+#, fuzzy
 msgid "Safety costs"
-msgstr ""
+msgstr "安全なマージン"
 
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:4656
+#, fuzzy
 msgid "Safety cost levels"
-msgstr ""
+msgstr "\"元に戻す\" の回数:"
 
 #. type: Content of: <book><chapter><section><section><section><figure><mediaobject>
 #: en/aptitude.xml:4659
@@ -7252,8 +7247,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><thead><row><entry>
 #: en/aptitude.xml:4698
+#, fuzzy
 msgid "Cost level"
-msgstr ""
+msgstr "バッテリーのレベル"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><thead><row><entry>
 #: en/aptitude.xml:4700
@@ -7384,13 +7380,15 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:4770
+#, fuzzy
 msgid "Configuring the interactive dependency resolver"
-msgstr ""
+msgstr "依存関係解決器にエラーが生じました: %s"
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4773
+#, fuzzy
 msgid "Configuring resolver hints"
-msgstr ""
+msgstr "ウィンドウマネージャーのヒント"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4776
@@ -7719,7 +7717,7 @@ msgstr ""
 #: en/aptitude.xml:5090
 #, fuzzy
 msgid "Searching for strings"
-msgstr "検索パターン"
+msgstr "“%s”をサーバー%sから検索\n"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5093
@@ -7829,8 +7827,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5209
+#, fuzzy
 msgid "Shorthand for search terms"
-msgstr ""
+msgstr "- 全てのデータから検索する"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5212
@@ -7909,7 +7908,7 @@ msgstr ""
 #: en/aptitude.xml:5278
 #, fuzzy
 msgid "Searches and versions"
-msgstr "検索パターン"
+msgstr "次のディストリビューションのバージョンを優先する: "
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5281
@@ -7993,8 +7992,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5375
+#, fuzzy
 msgid "Explicit search targets"
-msgstr ""
+msgstr "対象のロックを解除しません"
 
 #. type: Content of: <book><chapter><section><section><para><footnote><para>
 #: en/aptitude.xml:5397
@@ -8551,8 +8551,9 @@ msgstr "<literal>~F</literal>"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5707
+#, fuzzy
 msgid "Select no packages."
-msgstr ""
+msgstr "依存関係が壊れているパッケージはありません。"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5712
@@ -8965,7 +8966,7 @@ msgstr "<literal>~T</literal>"
 #: en/aptitude.xml:5911
 #, fuzzy
 msgid "Select all packages."
-msgstr "Reinstalls the package."
+msgstr "すべてのパッケージを表示"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5916
@@ -9053,7 +9054,7 @@ msgstr "<literal>~v</literal>"
 #: en/aptitude.xml:5959
 #, fuzzy
 msgid "Select virtual packages."
-msgstr "必須パッケージにマッチします。"
+msgstr "  複合仮想パッケージ: "
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:5964
@@ -9128,7 +9129,7 @@ msgstr ""
 #: en/aptitude.xml:6024
 #, fuzzy
 msgid "Use of the <literal>?=</literal> term."
-msgstr "リテラル <literal>%</literal>"
+msgstr "長期予測"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6028
@@ -9741,7 +9742,7 @@ msgstr ""
 #: en/aptitude.xml:6481
 #, fuzzy
 msgid "Use of the <literal>?for</literal> term"
-msgstr "リテラル <literal>%</literal>"
+msgstr "このアカウントの用途:"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6483
@@ -9812,7 +9813,7 @@ msgstr ""
 #: en/aptitude.xml:6538
 #, fuzzy
 msgid "<literal>?multiarch(<replaceable>multiarch</replaceable>)</literal>"
-msgstr "<literal>~G<replaceable>タグ</replaceable></literal>"
+msgstr "書き方が入力されていません！"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6542
@@ -10367,9 +10368,8 @@ msgstr "&aptitude; のカスタマイズ"
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:6979
-#, fuzzy
 msgid "Customizing the package list"
-msgstr "パッケージ一覧のカスタマイズ"
+msgstr "パッケージリストのカスタマイズ"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:6982
@@ -10898,9 +10898,8 @@ msgstr "プログラム名"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:7267
-#, fuzzy
 msgid "The length of the name."
-msgstr "プログラム名の長さ。"
+msgstr "名前の長さです。"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:7270
@@ -11259,9 +11258,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
 #: en/aptitude.xml:7483
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "action"
-msgstr "アクション"
+msgstr "action"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:7483 en/aptitude.xml:7496 en/aptitude.xml:7506
@@ -11355,9 +11354,9 @@ msgstr "パッケージ名の 1 文字目に基づいてパッケージを分類
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
 #: en/aptitude.xml:7550
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "hier"
-msgstr "白"
+msgstr "hier"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7554
@@ -11370,9 +11369,9 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
 #: en/aptitude.xml:7561
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "pattern(<replaceable>pattern</replaceable> <optional>=> <replaceable>title</replaceable></optional> <optional>{ <replaceable>policy</replaceable> }</optional> <optional>, ...</optional>)"
-msgstr "pattern(<replaceable>パターン</replaceable> <optional>=> <replaceable>タイトル</replaceable></optional><optional>, ...</optional>)"
+msgstr "pattern(<replaceable>パターン</replaceable> <optional>=> <replaceable>タイトル</replaceable></optional> <optional>{ <replaceable>規則</replaceable> }</optional> <optional>, ...</optional>)"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7565
@@ -11516,7 +11515,7 @@ msgstr ""
 #: en/aptitude.xml:7694
 #, no-wrap
 msgid "priority"
-msgstr "優先度"
+msgstr "priority"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7698
@@ -11631,7 +11630,7 @@ msgstr ""
 #: en/aptitude.xml:7806
 #, no-wrap
 msgid "status"
-msgstr "状態"
+msgstr "status"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7810
@@ -11651,7 +11650,7 @@ msgstr "更新可能"
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/aptitude.xml:7816
 msgid "New"
-msgstr ""
+msgstr "新規"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/aptitude.xml:7817
@@ -11666,7 +11665,7 @@ msgstr "インストールされていない"
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/aptitude.xml:7819
 msgid "Obsolete and Locally Created"
-msgstr ""
+msgstr "廃止された、またはローカルで作成された"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/aptitude.xml:7820
@@ -11677,14 +11676,13 @@ msgstr "仮想"
 #: en/aptitude.xml:7826
 #, no-wrap
 msgid "source"
-msgstr ""
+msgstr "source"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7830
-#, fuzzy
 #| msgid "Groups packages according to their Section field."
 msgid "Groups packages according to their source package name."
-msgstr "セクション (Section) フィールドに応じてパッケージを分類します。"
+msgstr "ソースパッケージ名に応じてパッケージを分類します。"
 
 # <!-- TRANSLATION-FIXME: Are there no Japanese translations for "facet"? -->
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
@@ -11724,7 +11722,7 @@ msgstr ""
 #: en/aptitude.xml:7858
 #, no-wrap
 msgid "task"
-msgstr ""
+msgstr "task"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7862
@@ -11744,7 +11742,7 @@ msgstr ""
 #: en/aptitude.xml:7873
 #, no-wrap
 msgid "versions"
-msgstr ""
+msgstr "versions"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7881
@@ -12197,7 +12195,7 @@ msgstr "<literal>f6</literal>"
 #: en/aptitude.xml:8162
 #, fuzzy
 msgid "Switches to the next active view."
-msgstr "Switches to the next active view."
+msgstr "/表示(_V)/移動(_G)/次のメッセージ(_N)"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8167
@@ -12309,7 +12307,7 @@ msgstr "<literal>d</literal>"
 #: en/aptitude.xml:8220
 #, fuzzy
 msgid "Displays the dependencies of the currently selected package."
-msgstr "Displays the dependencies of the currently selected package."
+msgstr "現在選択中のパッケージに削除用の印をつけます"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8226
@@ -12430,10 +12428,9 @@ msgstr "<literal>R</literal>"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8282
-#, fuzzy
 msgid "Runs <quote>dpkg-reconfigure</quote> on the currently selected package."
 msgstr ""
-"Runs <quote>dpkg-reconfigure</quote> on the currently selected package."
+"現在選択しているパッケージで <quote>dpkg-reconfigure</quote> を実行します。"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8288
@@ -12471,7 +12468,7 @@ msgstr "<literal>E</literal>"
 #: en/aptitude.xml:8301
 #, fuzzy
 msgid "Opens the hierarchy editor."
-msgstr "Opens the hierarchy editor."
+msgstr "方位マップエディターを開く"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8307
@@ -12921,7 +12918,7 @@ msgstr "<literal>.</literal>"
 #: en/aptitude.xml:8551
 #, fuzzy
 msgid "Advance the dependency resolver to the next solution."
-msgstr "Advance the dependency resolver to the next solution."
+msgstr "依存関係の問題に対して、次の解決方法を選択します。"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8556
@@ -12987,7 +12984,7 @@ msgstr "<literal>,</literal>"
 #: en/aptitude.xml:8585
 #, fuzzy
 msgid "Return the dependency resolver to the previous solution."
-msgstr "Return the dependency resolver to the previous solution."
+msgstr "依存関係の問題に対して、前の解決方法を選択します。"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8590
@@ -13076,7 +13073,9 @@ msgstr "<literal>C-l</literal>"
 #: en/aptitude.xml:8637
 #, fuzzy
 msgid "Redraws the screen from scratch."
-msgstr "Redraws the screen from scratch."
+msgstr ""
+"\n"
+"RESTに失敗しました、最初から始めます。\n"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8642
@@ -13133,7 +13132,7 @@ msgstr "<literal>n</literal>"
 #: en/aptitude.xml:8671
 #, fuzzy
 msgid "Repeats the last search."
-msgstr "Repeats the last search."
+msgstr "最後に行った検索を繰り返します"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8676
@@ -14057,7 +14056,7 @@ msgstr "<literal>Menu</literal>"
 #: en/aptitude.xml:9177
 #, fuzzy
 msgid "Used by drop-down menus."
-msgstr "Used by drop-down menus."
+msgstr "メニューをドロップ・ダウン表示する際の遅延時間"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:9182
@@ -14131,7 +14130,7 @@ msgstr "<literal>PkgTree</literal>"
 #: en/aptitude.xml:9230
 #, fuzzy
 msgid "Used by package lists."
-msgstr "Used by package lists."
+msgstr "パッケージ名は %s で提供されています"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:9235
@@ -15164,7 +15163,7 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><synopsis>
 #: en/aptitude.xml:9910
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<replaceable>Name</replaceable> <replaceable>Type</replaceable> {\n"
 "  Row <replaceable>row</replaceable>;\n"
@@ -15174,7 +15173,15 @@ msgid ""
 "\n"
 "  <replaceable>additional options...</replaceable>\n"
 "};"
-msgstr "<replaceable>Name</replaceable> <replaceable>Type</replaceable> { Row <replaceable>row</replaceable>; Column <replaceable>column</replaceable>; Width <replaceable>width</replaceable>; Height <replaceable>height</replaceable>; <replaceable>additional options...</replaceable> };"
+msgstr ""
+"<replaceable>名前</replaceable> <replaceable>種別</replaceable> {\n"
+"  Row <replaceable>行</replaceable>;\n"
+"  Column <replaceable>列</replaceable>;\n"
+"  Width <replaceable>幅</replaceable>;\n"
+"  Height <replaceable>高さ</replaceable>;\n"
+"\n"
+"  <replaceable>追加オプション...</replaceable>\n"
+"};"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:9920
@@ -15319,9 +15326,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10025
-#, fuzzy
 msgid "Placement of display elements"
-msgstr "Placement of display elements"
+msgstr "表示要素の配置"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:10028
@@ -15457,9 +15463,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10109
-#, fuzzy
 msgid "Display layout option reference"
-msgstr "Display layout option reference"
+msgstr "表示レイアウトオプションリファレンス"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:10112
@@ -15682,13 +15687,11 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10264
-#, fuzzy
 msgid ""
 "<literal>Height</literal> <replaceable>height</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>Height</literal> <replaceable>height</replaceable><literal>;</"
-"literal>"
+"<literal>Height</literal> <replaceable>高さ</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10269
@@ -15702,12 +15705,11 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10276
-#, fuzzy
 msgid ""
 "<literal>PopUpDownKey</literal> <replaceable>command</replaceable><literal>;"
 "</literal>"
 msgstr ""
-"<literal>PopUpDownKey</literal> <replaceable>command</replaceable><literal>;"
+"<literal>PopUpDownKey</literal> <replaceable>コマンド</replaceable><literal>;"
 "</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
@@ -15740,9 +15742,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10300
-#, fuzzy
 msgid "<literal>PopUpDownLinked <replaceable>element</replaceable>;</literal>"
-msgstr "<literal>PopUpDownLinked <replaceable>element</replaceable>;</literal>"
+msgstr "<literal>PopUpDownLinked <replaceable>要素</replaceable>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10313
@@ -15760,11 +15761,10 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10324
-#, fuzzy
 msgid ""
 "<literal>Row</literal> <replaceable>row</replaceable><literal>;</literal>"
 msgstr ""
-"<literal>Row</literal> <replaceable>row</replaceable><literal>;</literal>"
+"<literal>Row</literal> <replaceable>行</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10328
@@ -15778,12 +15778,11 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10336
-#, fuzzy
 msgid ""
 "<literal>RowAlign</literal> <replaceable>alignment</replaceable><literal>;</"
 "literal>"
 msgstr ""
-"<literal>RowAlign</literal> <replaceable>alignment</replaceable><literal>;</"
+"<literal>RowAlign</literal> <replaceable>位置</replaceable><literal>;</"
 "literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
@@ -15812,7 +15811,6 @@ msgstr "If this option is not present, it defaults to <literal>Top</literal>."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10360
-#, fuzzy
 msgid ""
 "<literal>RowExpand</literal> <literal>true</literal>|<literal>false;</"
 "literal>"
@@ -15834,7 +15832,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10379
-#, fuzzy
 msgid ""
 "<literal>RowShrink</literal> <literal>true</literal>|<literal>false;</"
 "literal>"
@@ -15862,9 +15859,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10402
-#, fuzzy
 msgid "<literal>Visible true|false;</literal>"
-msgstr "<literal>-s</literal>, <literal>--simulate</literal>"
+msgstr "<literal>Visible true|false;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10406
@@ -15890,11 +15886,10 @@ msgstr "If this option is not present, it defaults to <literal>true</literal>."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10422
-#, fuzzy
 msgid ""
 "<literal>Width</literal> <replaceable>width</replaceable><literal>;</literal>"
 msgstr ""
-"<literal>Width</literal> <replaceable>width</replaceable><literal>;</literal>"
+"<literal>Width</literal> <replaceable>幅</replaceable><literal>;</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10427
@@ -15908,9 +15903,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:10437
-#, fuzzy
 msgid "Configuration file reference"
-msgstr "Configuration file reference"
+msgstr "設定ファイルリファレンス"
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10440
@@ -16094,9 +16088,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10563
-#, fuzzy
 msgid "Available configuration options"
-msgstr "Available configuration options"
+msgstr "利用できる設定オプション"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:10566
@@ -16126,9 +16119,8 @@ msgstr "オプション"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10584
-#, fuzzy
 msgid "<literal>Apt::AutoRemove::RecommendsImportant</literal>"
-msgstr "<literal>-r</literal>, <literal>--with-recommends</literal>"
+msgstr "<literal>Apt::AutoRemove::RecommendsImportant</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10585 en/aptitude.xml:10614 en/aptitude.xml:10628
@@ -16138,9 +16130,8 @@ msgstr "<literal>-r</literal>, <literal>--with-recommends</literal>"
 #: en/aptitude.xml:12085 en/aptitude.xml:12150 en/aptitude.xml:12165
 #: en/aptitude.xml:12203 en/aptitude.xml:12215 en/aptitude.xml:12295
 #: en/aptitude.xml:12381 en/aptitude.xml:12406 en/aptitude.xml:12419
-#, fuzzy
 msgid "<literal>true</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>true</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10588
@@ -17203,7 +17194,7 @@ msgstr "<literal>Aptitude::Logging::Levels</literal>"
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11363 en/aptitude.xml:11559
 msgid "(empty)"
-msgstr ""
+msgstr "(空)"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11365
@@ -19361,19 +19352,20 @@ msgstr ""
 #. type: Content of: <book><chapter><title>
 #: en/aptitude.xml:12851
 msgid "aptitude frequently asked questions"
-msgstr ""
+msgstr "aptitude のよくある質問"
 
 #. type: Content of: <book><chapter><blockquote><attribution>
 #: en/aptitude.xml:12855
-#, fuzzy
 msgid "<citetitle pubwork='book'>Monty Python and the Holy Grail</citetitle>"
-msgstr "<citetitle pubwork='book'>Monty Python and the Holy Grail</citetitle>"
+msgstr ""
+"<citetitle pubwork='book'>モンティ・パイソン・アンド・ホーリー・グレイル</"
+"citetitle>"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:12859
 #, fuzzy
 msgid "<quote>What ... is your name?</quote>"
-msgstr "<quote>What ... is your name?</quote>"
+msgstr "AIM のスクリーンネームを入力してください"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:12863
@@ -19385,7 +19377,7 @@ msgstr "<quote>I am Arthur, King of the Britons.</quote>"
 #: en/aptitude.xml:12867
 #, fuzzy
 msgid "<quote>What ... is your quest?</quote>"
-msgstr "<quote>What ... is your quest?</quote>"
+msgstr "AIM のパスワードを入力してください"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:12871
@@ -19461,12 +19453,11 @@ msgstr "コマンド &search-find-broken; を使用してください。"
 # <!-- TRANSLATION-FIXME: Use an entity reference for aptitude? -->
 #. type: Content of: <book><chapter><qandaset><qandaentry><question><para>
 #: en/aptitude.xml:12934
-#, fuzzy
 #| msgid ""
 #| "I want to select text, why doesn't aptitude let me disable the mouse?"
 msgid "I want to select text, why doesn't &aptitude; let me disable the mouse?"
 msgstr ""
-"テキストを選択したいのですが、なぜ aptitude はマウスを使用不可にしないので"
+"テキストを選択したいのですが、なぜ &aptitude; はマウスを使用不可にしないので"
 "しょう?"
 
 # <!-- TRANSLATION-FIXME: How to translate override? -->
@@ -19490,19 +19481,17 @@ msgstr "クレジット"
 
 #. type: Content of: <book><chapter><blockquote><attribution>
 #: en/aptitude.xml:12958
-#, fuzzy
 msgid ""
 "<personname> <firstname>Terry</firstname> <surname>Pratchett</surname> </"
 "personname>, <citetitle pubwork='book'>The Last Hero</citetitle>"
 msgstr ""
-"<personname> <firstname>Terry</firstname> <surname>Pratchett</surname> </"
-"personname>, <citetitle pubwork='book'>The Last Hero</citetitle>"
+"<personname lang=\"en\"> <firstname>Terry</firstname> <surname>Pratchett</"
+"surname> </personname>, <citetitle pubwork='book'>The Last Hero</citetitle>"
 
 #. type: Content of: <book><chapter><blockquote><para>
 #: en/aptitude.xml:12966
-#, fuzzy
 msgid "No-one remembers the singer.  The song remains."
-msgstr "No-one remembers the singer.  The song remains."
+msgstr "歌い手を覚えている者はない。歌は残る。"
 
 #. type: Content of: <book><chapter><para>
 #: en/aptitude.xml:12972
@@ -19543,9 +19532,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><variablelist><title>
 #: en/aptitude.xml:12997
-#, fuzzy
 msgid "Translations and internationalization"
-msgstr "翻訳・国際化"
+msgstr "翻訳と国際化"
 
 #. type: Content of: <book><chapter><variablelist><varlistentry><term>
 #: en/aptitude.xml:13000
@@ -19624,9 +19612,8 @@ msgstr "ドイツ語訳"
 
 #. type: Content of: <book><chapter><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:13073
-#, fuzzy
 msgid "Sebastian Schaffert, Erich Schubert, Sebastian Kapfer, Jens Seidel"
-msgstr "Sebastian Schaffert, Erich Schubert, Sebastian Kapfe"
+msgstr "Sebastian Schaffert, Erich Schubert, Sebastian Kapfer, Jens Seidel"
 
 #. type: Content of: <book><chapter><variablelist><varlistentry><term>
 #: en/aptitude.xml:13078
@@ -19646,7 +19633,7 @@ msgstr "日本語訳"
 #. type: Content of: <book><chapter><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:13092
 msgid "Yasuo Eto, Noritada Kobayashi"
-msgstr "Yasuo Eto, Noritada Kobayashi"
+msgstr "Yasuo Eto, Noritada Kobayashi, Nozomu Kurasawa"
 
 #. type: Content of: <book><chapter><variablelist><varlistentry><term>
 #: en/aptitude.xml:13098
@@ -19761,19 +19748,17 @@ msgstr ""
 #. type: Content of: <book><chapter><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:13202
 msgid "Ian Jackson, Michael Vogt"
-msgstr ""
+msgstr "Ian Jackson, Michael Vogt"
 
 #. type: Content of: <book><reference><title>
 #: en/aptitude.xml:13210
-#, fuzzy
 msgid "Command-line reference"
 msgstr "コマンドラインリファレンス"
 
 #. type: Content of: <refentry><refentryinfo><title>
 #: en/manpage.xml:17
-#, fuzzy
 msgid "aptitude"
-msgstr "&aptitude;"
+msgstr "aptitude"
 
 #. NWalsh's docbook scripts use this to generate the footer:
 #. type: Content of: <refentry><refentryinfo>
@@ -19785,13 +19770,11 @@ msgstr ""
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:25
-#, fuzzy
 msgid "Copyright 2004-2011 Daniel Burrows."
-msgstr "Daniel Burrows"
+msgstr "Copyright 2004-2011 Daniel Burrows"
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:29 en/manpage.xml:2463 en/manpage.xml:2666
-#, fuzzy
 msgid ""
 "This manual page is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -19805,7 +19788,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:37 en/manpage.xml:2471 en/manpage.xml:2674
-#, fuzzy
 msgid ""
 "This manual page is distributed in the hope that it will be useful, but "
 "WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
@@ -19826,8 +19808,8 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
 msgstr ""
 "You should have received a copy of the GNU General Public License along with "
-"this manual; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307 USA"
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #. type: Content of: <refentry><refnamediv><refname>
 #: en/manpage.xml:54 en/manpage.xml:59
@@ -19841,7 +19823,6 @@ msgstr "パッケージマネージャの高レベルインタフェース"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:65
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <group choice='req'> "
@@ -19849,13 +19830,14 @@ msgid ""
 "choice='plain'>forget-new</arg> <arg choice='plain'>keep-all</arg> <arg "
 "choice='plain'>update</arg> </group>"
 msgstr ""
-"<arg choice='plain'>autoclean</arg> <arg choice='plain'>clean</arg> <arg "
+"<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
+"ション</replaceable></arg> <group choice='req'> <arg "
+"choice='plain'>autoclean</arg> <arg choice='plain'>clean</arg> <arg "
 "choice='plain'>forget-new</arg> <arg choice='plain'>keep-all</arg> <arg "
-"choice='plain'>update</arg> <arg choice='plain'>upgrade</arg>"
+"choice='plain'>update</arg> </group>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:79
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <group choice='req'> "
@@ -19864,12 +19846,12 @@ msgid ""
 "replaceable></arg>"
 msgstr ""
 "<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
-"ション</replaceable></arg> <arg choice='plain'>search</arg> <arg "
-"choice='plain' rep='repeat'><replaceable>パターン</replaceable></arg>"
+"ション</replaceable></arg> <group choice='req'> <arg choice='plain'>full-"
+"upgrade</arg> <arg choice='plain'>safe-upgrade</arg> </group> <arg "
+"choice='opt' rep='repeat'><replaceable>パッケージ</replaceable></arg>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:92
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <group choice='req'> "
@@ -19883,13 +19865,17 @@ msgid ""
 "choice='plain'>versions</arg> </group> <arg choice='plain' "
 "rep='repeat'><replaceable>packages</replaceable></arg>"
 msgstr ""
-"<arg choice='plain'>changelog</arg> <arg choice='plain'>dist-upgrade</arg> "
-"<arg choice='plain'>download</arg> <arg choice='plain'>forbid-version</arg> "
-"<arg choice='plain'>hold</arg> <arg choice='plain'>install</arg> <arg "
-"choice='plain'>keep-all</arg> <arg choice='plain'>markauto</arg> <arg "
+"<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
+"ション</replaceable></arg> <group choice='req'> <arg choice='plain'>build-"
+"dep</arg> <arg choice='plain'>build-depends</arg> <arg "
+"choice='plain'>changelog</arg> <arg choice='plain'>download</arg> <arg "
+"choice='plain'>forbid-version</arg> <arg choice='plain'>hold</arg> <arg "
+"choice='plain'>install</arg> <arg choice='plain'>markauto</arg> <arg "
 "choice='plain'>purge</arg> <arg choice='plain'>reinstall</arg> <arg "
 "choice='plain'>remove</arg> <arg choice='plain'>show</arg> <arg "
-"choice='plain'>unhold</arg> <arg choice='plain'>unmarkauto</arg>"
+"choice='plain'>unhold</arg> <arg choice='plain'>unmarkauto</arg> <arg "
+"choice='plain'>versions</arg> </group> <arg choice='plain' "
+"rep='repeat'><replaceable>パッケージ</replaceable></arg>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:118
@@ -19931,7 +19917,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:152
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <group choice='req'> "
@@ -19940,21 +19925,23 @@ msgid ""
 "<arg choice='plain'><replaceable>package</replaceable></arg>"
 msgstr ""
 "<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
-"ション</replaceable></arg> <arg choice='plain'>search</arg> <arg "
-"choice='plain' rep='repeat'><replaceable>パターン</replaceable></arg>"
+"ション</replaceable></arg> <group choice='req'> <arg choice='plain'>why</"
+"arg> <arg choice='plain'>why-not</arg> </group> <arg choice='opt' "
+"rep='repeat'><replaceable>パターン</replaceable></arg> <arg "
+"choice='plain'><replaceable>パッケージ</replaceable></arg>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:167
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt'>-S <replaceable>fname</"
 "replaceable></arg> <group choice='opt'> <arg choice='plain'>--autoclean-on-"
 "startup</arg> <arg choice='plain'>--clean-on-startup</arg> <arg "
 "choice='plain'>-i</arg> <arg choice='plain'>-u</arg> </group>"
 msgstr ""
-"<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
-"ション</replaceable></arg> <arg choice='plain'>search</arg> <arg "
-"choice='plain' rep='repeat'><replaceable>パターン</replaceable></arg>"
+"<command>aptitude</command> <arg choice='opt'>-S <replaceable>ファイル名</"
+"replaceable></arg> <group choice='opt'> <arg choice='plain'>--autoclean-on-"
+"startup</arg> <arg choice='plain'>--clean-on-startup</arg> <arg "
+"choice='plain'>-i</arg> <arg choice='plain'>-u</arg> </group>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:178
@@ -19982,7 +19969,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><title>
 #: en/manpage.xml:200
-#, fuzzy
 msgid "Command-line actions"
 msgstr "コマンドラインアクション"
 
@@ -20568,7 +20554,7 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:632
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "i   apt                             - Advanced front-end for dpkg              \n"
 #| "pi  apt-build                       - frontend to apt to build, optimize and in\n"
@@ -20580,7 +20566,7 @@ msgid ""
 "cp  apt-file                        - APT package searching utility -- command-\n"
 "ihA raptor-utils                    - Raptor RDF Parser utilities"
 msgstr ""
-"i   apt                             - Advanced front-end for dpkg              \n"
+"i   apt                             - Advanced front-end for dpkg\n"
 "pi  apt-build                       - frontend to apt to build, optimize and in\n"
 "cp  apt-file                        - APT package searching utility -- command-\n"
 "ihA raptor-utils                    - Raptor RDF Parser utilities"
@@ -21655,15 +21641,12 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1478
-#, fuzzy
 msgid ""
 "<literal>--log-level=<replaceable>category</replaceable>:<replaceable>level</"
 "replaceable></literal> causes messages in <replaceable>category</"
 "replaceable> to only be logged if their level is <replaceable>level</"
 "replaceable> or higher."
 msgstr ""
-"<literal>-q<optional>=<replaceable>n</replaceable></optional></literal>, "
-"<literal>--quiet<optional>=<replaceable>n</replaceable></optional></literal>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1485
@@ -22283,9 +22266,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><title>
 #: en/manpage.xml:1997
-#, fuzzy
 msgid "Usage of <literal>--show-summary</literal>"
-msgstr "リテラル <literal>%</literal>"
+msgstr "<literal>--show-summary</literal> の使用方法"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><para>
 #: en/manpage.xml:2000
@@ -22296,7 +22278,7 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><screen>
 #: en/manpage.xml:2005
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "$ aptitude -v --show-summary why foomatic-db\n"
 "Packages requiring foomatic-db:\n"
@@ -22347,6 +22329,54 @@ msgid ""
 "  printconf D: foomatic-db\n"
 "\t    "
 msgstr ""
+"$ aptitude -v --show-summary why foomatic-db\n"
+"foomatic-db を必須とするパッケージ:\n"
+"  cupsys-driver-gutenprint\n"
+"  foomatic-db-engine\n"
+"  foomatic-db-gutenprint\n"
+"  foomatic-db-hpijs\n"
+"  foomatic-filters-ppds\n"
+"  foomatic-gui\n"
+"  kde\n"
+"  printconf\n"
+"  wine\n"
+"\n"
+"$ aptitude -v --show-summary=first-package-and-type why foomatic-db\n"
+"foomatic-db を必須とするパッケージ:\n"
+"  [依存] cupsys-driver-gutenprint\n"
+"  [依存] foomatic-db-engine\n"
+"  [依存] foomatic-db-gutenprint\n"
+"  [依存] foomatic-db-hpijs\n"
+"  [依存] foomatic-filters-ppds\n"
+"  [依存] foomatic-gui\n"
+"  [依存] kde\n"
+"  [依存] printconf\n"
+"  [依存] wine\n"
+"\n"
+"$ aptitude -v --show-summary=all-packages why foomatic-db\n"
+"foomatic-db を必須とするパッケージ:\n"
+"  cupsys-driver-gutenprint D: cups-driver-gutenprint D: cups R: foomatic-filters R: foomatic-db-engine D: foomatic-db\n"
+"  foomatic-filters-ppds D: foomatic-filters R: foomatic-db-engine D: foomatic-db\n"
+"  kde D: kdeadmin R: system-config-printer-kde D: system-config-printer R: hal-cups-utils D: cups R: foomatic-filters R: foomatic-db-engine D: foomatic-db\n"
+"  wine D: libwine-print D: cups-bsd R: cups R: foomatic-filters R: foomatic-db-engine D: foomatic-db\n"
+"  foomatic-db-engine D: foomatic-db\n"
+"  foomatic-db-gutenprint D: foomatic-db\n"
+"  foomatic-db-hpijs D: foomatic-db\n"
+"  foomatic-gui D: python-foomatic D: foomatic-db-engine D: foomatic-db\n"
+"  printconf D: foomatic-db\n"
+"\n"
+"$ aptitude -v --show-summary=all-packages-with-dep-versions why foomatic-db\n"
+"foomatic-db を必須とするパッケージ:\n"
+"  cupsys-driver-gutenprint D: cups-driver-gutenprint (>= 5.0.2-4) D: cups (>= 1.3.0) R: foomatic-filters (>= 4.0) R: foomatic-db-engine (>= 4.0) D: foomatic-db (>= 20090301)\n"
+"  foomatic-filters-ppds D: foomatic-filters R: foomatic-db-engine (>= 4.0) D: foomatic-db (>= 20090301)\n"
+"  kde D: kdeadmin (>= 4:3.5.5) R: system-config-printer-kde (>= 4:4.2.2-1) D: system-config-printer (>= 1.0.0) R: hal-cups-utils D: cups R: foomatic-filters (>= 4.0) R: foomatic-db-engine (>= 4.0) D: foomatic-db (>= 20090301)\n"
+"  wine D: libwine-print (= 1.1.15-1) D: cups-bsd R: cups R: foomatic-filters (>= 4.0) R: foomatic-db-engine (>= 4.0) D: foomatic-db (>= 20090301)\n"
+"  foomatic-db-engine D: foomatic-db\n"
+"  foomatic-db-gutenprint D: foomatic-db\n"
+"  foomatic-db-hpijs D: foomatic-db\n"
+"  foomatic-gui D: python-foomatic (>= 0.7.9.2) D: foomatic-db-engine D: foomatic-db (>= 20090301)\n"
+"  printconf D: foomatic-db\n"
+"\t    "
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><para>
 #: en/manpage.xml:2055
@@ -22365,7 +22395,7 @@ msgstr ""
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example>
 #: en/manpage.xml:2058
 msgid "  <placeholder type=\"screen\" id=\"0\"/>"
-msgstr ""
+msgstr "  <placeholder type=\"screen\" id=\"0\"/>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:2066
@@ -22814,8 +22844,9 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><title>
 #: en/manpage.xml:2390
+#, fuzzy
 msgid "Files"
-msgstr ""
+msgstr "ファイル"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:2394
@@ -22833,14 +22864,12 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:2407
-#, fuzzy
 msgid ""
 "<filename>/etc/apt/apt.conf</filename>, <filename>/etc/apt/apt.conf.d/*</"
 "filename>, <filename>~/.aptitude/config</filename>"
 msgstr ""
-"新しいパッケージをインストールする際に、推奨を依存関係として扱います (これ"
-"は、<filename>/etc/apt/apt.conf</filename> および <filename>~/.aptitude/"
-"config</filename> の設定を上書きします)。"
+"<filename>/etc/apt/apt.conf</filename>, <filename>/etc/apt/apt.conf.d/*</"
+"filename>, <filename>~/.aptitude/config</filename>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:2413
@@ -22854,7 +22883,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><title>
 #: en/manpage.xml:2426 en/manpage.xml:2629 en/manpage.xml:2837
-#, fuzzy
 msgid "See also"
 msgstr "関連項目"
 
@@ -22875,8 +22903,9 @@ msgstr ""
 
 #. type: Content of: <refentry><refnamediv><refname>
 #: en/manpage.xml:2451 en/manpage.xml:2493
+#, fuzzy
 msgid "aptitude-create-state-bundle"
-msgstr ""
+msgstr "最新式 (\"State-Of-The-Art\") のクロームのロゴを生成します"
 
 #. NWalsh's docbook scripts use this to generate the footer:
 #. type: Content of: <refentry><refentryinfo>
@@ -22890,33 +22919,30 @@ msgstr ""
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:2459 en/manpage.xml:2662
-#, fuzzy
 msgid "Copyright 2007 Daniel Burrows."
-msgstr "Daniel Burrows"
+msgstr "Copyright 2007 Daniel Burrows."
 
 #. type: Content of: <refentry><refmeta><refentrytitle>
 #: en/manpage.xml:2488
-#, fuzzy
 msgid "<command>aptitude-create-state-bundle</command>"
-msgstr "<command>aptitude</command>"
+msgstr "<command>aptitude-create-state-bundle</command>"
 
 #. type: Content of: <refentry><refnamediv><refpurpose>
 #: en/manpage.xml:2494
 #, fuzzy
 msgid "bundle the current aptitude state"
-msgstr "現在の画面を閉じます。"
+msgstr "Aptitude の状態ファイルを開けません"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:2499
-#, fuzzy
 msgid ""
 "<command>aptitude-create-state-bundle</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <arg "
 "choice='plain'><replaceable>output-file</replaceable></arg>"
 msgstr ""
-"<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
-"ション</replaceable></arg> <arg choice='plain'>search</arg> <arg "
-"choice='plain' rep='repeat'><replaceable>パターン</replaceable></arg>"
+"<command>aptitude-create-state-bundle</command> <arg choice='opt' "
+"rep='repeat'><replaceable>オプション</replaceable></arg> <arg "
+"choice='plain'><replaceable>出力ファイル</replaceable></arg>"
 
 #. type: Content of: <refentry><refsect1><para>
 #: en/manpage.xml:2511
@@ -23022,8 +23048,9 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><title>
 #: en/manpage.xml:2614
+#, fuzzy
 msgid "File format"
-msgstr ""
+msgstr "ファイル形式:"
 
 #. type: Content of: <refentry><refsect1><para>
 #: en/manpage.xml:2617
@@ -23044,7 +23071,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><para>
 #: en/manpage.xml:2632
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>aptitude-run-state-bundle</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
@@ -23052,11 +23078,11 @@ msgid ""
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>apt</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
-"<citerefentry><refentrytitle>apt-get</refentrytitle><manvolnum>8</"
+"<citerefentry><refentrytitle>aptitude-run-state-bundle</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>aptitude</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>apt</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, aptitude-doc-"
-"<replaceable>言語</replaceable> パッケージの <filename>/usr/share/doc/"
-"aptitude/html/<replaceable>言語</replaceable>/index.html</filename>"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. type: Content of: <refentry><refnamediv><refname>
 #: en/manpage.xml:2654 en/manpage.xml:2696
@@ -23073,9 +23099,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refmeta><refentrytitle>
 #: en/manpage.xml:2691
-#, fuzzy
 msgid "<command>aptitude-run-state-bundle</command>"
-msgstr "<command>aptitude</command>"
+msgstr "<command>aptitude-run-state-bundle</command>"
 
 #. type: Content of: <refentry><refnamediv><refpurpose>
 #: en/manpage.xml:2697
@@ -23084,7 +23109,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:2702
-#, fuzzy
 msgid ""
 "<command>aptitude-run-state-bundle</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <arg "
@@ -23092,9 +23116,11 @@ msgid ""
 "choice='opt'> <replaceable>program</replaceable> <arg choice='opt' "
 "rep='repeat'><replaceable>arguments</replaceable></arg></arg>"
 msgstr ""
-"<command>aptitude</command> <arg choice='opt' rep='repeat'><replaceable>オプ"
-"ション</replaceable></arg> <arg choice='plain'>search</arg> <arg "
-"choice='plain' rep='repeat'><replaceable>パターン</replaceable></arg>"
+"<command>aptitude-run-state-bundle</command> <arg choice='opt' "
+"rep='repeat'><replaceable>オプション</replaceable></arg> <arg "
+"choice='plain'><replaceable>入力ファイル</replaceable></arg> <arg "
+"choice='opt'> <replaceable>プログラム</replaceable> <arg choice='opt' "
+"rep='repeat'><replaceable>引数</replaceable></arg></arg>"
 
 #. type: Content of: <refentry><refsect1><para>
 #: en/manpage.xml:2716
@@ -23131,8 +23157,9 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:2757
+#, fuzzy
 msgid "Display a brief usage summary."
-msgstr ""
+msgstr "使い方の概要を表示します"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:2763
@@ -23209,7 +23236,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><para>
 #: en/manpage.xml:2840
-#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>aptitude-create-state-bundle</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
@@ -23217,11 +23243,11 @@ msgid ""
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>apt</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
-"<citerefentry><refentrytitle>apt-get</refentrytitle><manvolnum>8</"
+"<citerefentry><refentrytitle>aptitude-create-state-bundle</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>aptitude</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>apt</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, aptitude-doc-"
-"<replaceable>言語</replaceable> パッケージの <filename>/usr/share/doc/"
-"aptitude/html/<replaceable>言語</replaceable>/index.html</filename>"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #, fuzzy
 #~ msgid "<literal>/usr/bin/debtags</literal>"
